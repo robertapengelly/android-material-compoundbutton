@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+    <declare-styleable name="MaterialCompoundButton">
+    
+        <!-- Use when defining newer drawables through xml.
+             If newer drawables are set as android:backgroud an invalid drawable tag ripple
+             exception will be thrown on pre-lollipop devices. -->
+        <attr format="reference" name="background" />
+        
+        <!-- A drawable to use as the background.  This can be either a reference
+             to a full drawable resource (such as a PNG image, 9-patch,
+             XML state list description, etc), or a solid color such as "#ff000000"
+            (black). -->
+        <attr name="android:background" />
+        
+        <!-- Drawable used for the button graphic (e.g. checkbox, radio button, etc). -->
+        <attr name="android:button" />
+        
+        <!-- Indicates the initial checked state of this button. -->
+        <attr name="android:checked" />
+        
+        <!-- Tint to apply to the button graphic. -->
+        <attr name="buttonTint" format="color" />
+        
+        <!-- Blending mode used to apply the button graphic tint. -->
+        <attr name="buttonTintMode">
+        
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            <enum name="src_over" value="3" />
+            
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            <enum name="src_in" value="5" />
+            
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            <enum name="src_atop" value="9" />
+            
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
+            <enum name="multiply" value="14" />
+            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            <enum name="screen" value="15" />
+            
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
+            <enum name="add" value="16" />
+        
+        </attr>
+    
+    </declare-styleable>
+
+</resources>
