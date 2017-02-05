@@ -3,17 +3,6 @@
 
     <declare-styleable name="MaterialCompoundButton">
     
-        <!-- Use when defining newer drawables through xml.
-             If newer drawables are set as android:backgroud an invalid drawable tag ripple
-             exception will be thrown on pre-lollipop devices. -->
-        <attr format="reference" name="background" />
-        
-        <!-- A drawable to use as the background.  This can be either a reference
-             to a full drawable resource (such as a PNG image, 9-patch,
-             XML state list description, etc), or a solid color such as "#ff000000"
-            (black). -->
-        <attr name="android:background" />
-        
         <!-- Drawable used for the button graphic (e.g. checkbox, radio button, etc). -->
         <attr name="android:button" />
         
