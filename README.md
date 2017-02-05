@@ -1,6 +1,6 @@
 # MaterialCompoundButton
 
-Backported material styled CompoundButton for use on pre-lollipop devices. Supports Android 2.3 API 9 (GINGERBREAD) and up.<br />
+Backported material styled CompoundButton for use on pre-lollipop devices. Supports Android 2.3 API 9 (GINGERBREAD) and up.<br /><br />
 Also check out https://github.com/robertapengelly/android-material-button as MaterialCompondButton extends MaterialButton.
 
 # Installation
