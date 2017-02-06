@@ -19,5 +19,5 @@ Also check out https://github.com/robertapengelly/android-material-button as Mat
     Step 2. Add the dependency
     
     dependencies {
-        compile 'com.github.robertapengelly:android-material-compoundbutton:1.0.0'
+        compile 'com.github.robertapengelly:android-material-compoundbutton:1.0.1'
     }
